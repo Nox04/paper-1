@@ -33,211 +33,50 @@ esta tecnología sea implementada de forma extendida en el estudio de procesos c
 
 \begin{document}
 \maketitle
+Durante la última década, las investigaciones de la conectividad cerebral han generado una nueva dinámica en el estudio
+y el entendimiento del funcionamiento del cerebro humano \parencite{Wen2005}, sin embargo, uno de los desafíos más
+importantes dentro de este campo de acción sigue siendo la recolección, procesamiento y análisis de los datos 
+requeridos \parencite{doi:10.1146/annurev.psych.56.091103.070311}. De forma paralela, ha surgido la necesidad 
+de estudiar las redes temporales que se forman en tiempo real para poder observar cómo las diferentes estructuras 
+cerebrales interactúan entre sí \parencite{Swanson2003}.
 
-Lo que vemos, lo vemos no sólo en función de la estimulación entrante, sino de
-interferencias inconscientes en el procesamiento visual (Helmholtz, 1866). Tal vez la
-demostración más poderosa de esto son las imágenes biestables: aquellas en las que el mismo
-estímulo se alterna entre dos percepciones muy diferentes, correspondiendo a dos estados 
-estables compitiendo en un sistema dinámico subyacente. Ward Scholl, 2015.
+Una de las propuestas de la neurociencia moderna ha sido el aprovechamiento de los nuevos algoritmos que 
+permiten analizar la interdependencia entre señales temporales, además de la emergente teoría de redes complejas 
+y la aparición de técnicas como la magnetoencefalografía. \textcite{Sporns2010} ha sugerido 
+que la teoría de redes es especialmente adecuada para el estudio de la función cerebral, puesto que nuestro 
+cerebro contiene cerca de 1014 sinapsis neuronales y la enorme cantidad de conexiones propicia un entorno ideal 
+para la sincronización transitoria o permanente de neuronas dando como resultado la aparición de las funciones 
+cognitivas. Por lo tanto, comprender la organización de esta compleja red cerebral, representa 
+uno de los desafíos más importantes y emocionantes en el campo de la neurociencia.
 
-Los cambios perceptuales en las imágenes biestables pueden ser activados por múltiples
-factores, sin embargo, podemos clasificarlos en categorías: Primero, y tal vez el más intuitivo
-de todos es que el cambio puede ocurrir sin ninguna razón en concreto. Esta posibilidad es
-apoyada por la fenomenología de cambios no deseados y por la evidencia de que los periodos
-de dominio y supresión están caracterizados por una independencia estocástica.
+La perspectiva del funcionamiento del cerebro ha pasado de la visión frenológica a una visión integradora, 
+en la que la función cerebral se lleva a cabo mediante la comunicación entre distintas regiones \parencite{Tononi5033}. 
+Es por esto que herramientas como el EEG/MEG resultan de especial utilidad para el estudio de la conectividad
+ante estímulos cortos. Dicho estudio se hacía, inicialmente, a partir de las relaciones estadísticas entre las 
+series temporales obtenidas por los sensores, sin embargo, a día de hoy, han surgido nuevos métodos de 
+análisis como la correlación, la coherencia, la sincronización en fase y la causalidad \parencite{Jirsa2007}; 
+y, aunque estos métodos han mejorado procesos vitales como la localización de fuentes, siguen siendo insuficientes 
+para segregar y obtener resultados debido al gran número de datos.
 
-Segundo, los cambios perceptuales pueden ser sistemáticamente influenciados por las
-diferentes propiedades intrínsecas del estímulo mismo. Consideremos, por ejemplo, un
-estímulo en el que un grupo de puntos moviéndose puede ser visto como una esfera
-tridimensional transparente rotando hacia la derecha o la izquierda. Si la fuerza de una de las
-interpretaciones es mejorada (simplemente hacer que los puntos se muevan en una dirección
-de forma más brillante que las otras) entonces la percepción impulsada tenderá a dominar
-. De forma similar, simplemente el hecho de ver una
-interpretación por un periodo extendido de tiempo introducirá la adaptación, haciendo que el
-cambio a la interpretación contraria sea más probable a medida que el tiempo va escalando.
+Ante la necesidad imperante de ir mucho más allá de mostrar las estadísticas generales de las redes, 
+el uso de mecanismos tecnológicos cobra una importancia trascendental. Los algoritmos de inteligencia artificial 
+y machine learning son una primera respuesta a dicha necesidad y han probado su utilidad, sobretodo a la hora de 
+analizar grandes volúmenes de datos siguiendo patrones bien entrenados.
 
-Tercero, la estimulación visual totalmente extrínseca puede inducir el cambio perceptual.
-Por ejemplo, simplemente la presentación de un breve (pero consciente) estímulo visual
-puede inducir un subsecuente cambio perceptual mientras se observa un fenómeno como el
-cubo de Necker.
-
-Cuarto, la percepción de imágenes biestables puede cambiar debido a un esfuerzo
-voluntario, es decir, porque nosotros explícitamente intentamos hacerlas cambiar. Los
-observadores pueden mantener una percepción específica o pueden cambiar entre
-percepciones basándose en instrucciones explícitas de lo que deben hacer (Toppino, 2003).
-Por ejemplo, parece que algunos cambios intencionales en el cubo de Necker se producen
-debido a la priorización atencional de algunos contornos y vértices específicos.
-
-El cambio también puede ser influenciado por el conocimiento explícito de la
-multiestabilidad misma y las posibles percepciones compitiendo. Ocurre más fácilmente, por
-ejemplo, cuando las posibles interpretaciones son explícitamente reconocibles, 
-y de forma inversa una percepción que de otra manera sería dominante puede
-ver dramáticamente reducida su dominancia perpceptual ante el desconocimiento de la
-biestabilidad por parte del observador.
-
-Finalmente, en el 2015 se encontró que los cambios de percepción pueden producirse por
-la presentación sistemática de señales inconscientes. Pequeñas alteraciones en forma de
-señales, como marcas de oclusión ambiental, podrían disminuir la aleatoriedad de los
-cambios de percepción de estímulos biestables.
-
-Nuestro estudio se basó en la exploración de una de las posibilidades implementadas por
-Ward y Scholl, quienes en el año 2015 llevaron a cabo el experimento más completo hasta la
-fecha en relación a este tema. Utilizaremos un método diferente para la presentación de las
-señales inconscientes, enfocándonos en reducir la posibilidad de confundir un cambio
-estocástico con uno producido por la señal y observaremos si este cambio tiene alguna
-incidencia en los resultados recolectados por Ward y Scholl.
-
-En este punto estamos interesados en una posibilidad que no encaja limpiamente dentro
-de ninguna de esas categorías en particular, en la cual, señales inconscientes transitorias
-podrían ocasionar cambios perceptuales subsecuentes que no obstante a ojos de los
-observadores parecerían ser completamente aleatorios. A diferencia de la mayoría de estudios
-de factores de percepción de “arriba hacia abajo” (ej, esfuerzo voluntario o conocimiento de
-la ambigüedad), esta posibilidad involucra específicamente estímulos
-de percepción de “abajo hacia arriba”. A diferencia de estudios que cambian la naturaleza del
-estímulo que será visto (ej., Klink et al., 2008), el presente experimento involucra señales que
-no son, por si mismas parte de la percepción resultante. (No es simplemente que el
-observador no pueda apreciar como y porque las señales están influenciando su percepción;
-sino que, ellos no pueden si quiera ver las señales para empezar). Finalmente, mientras que
-hay muchos otros ejemplos de señales no vistas influenciando lo que vemos después, 
-aquí nosotros exploramos como una señal transitoria no vista
-puede influenciar una percepción estable en curso, incluso cuando ni el contenido ni la
-existencia de esa información llegue a ser consciente.
-
-Si dichas señales inconscientes influencian la percepción resultante de una forma
-dependiente de su contenido particular, esto indicará que la señal visual (procesamiento de
-abajo hacia arriba) puede influenciar el cambio de percepción incluso cuando las señales no
-figuran en la percepción resultante, e incluso
-cuando los observadores sienten que los cambios son enteramente estocásticos.
-
-Respecto a la animación utilizada, algunos de los investigadores también han apuntado
-que mientras la figura es una silueta pura, hay algunas señales sutiles de profundidad en la
-animación original (Troje, N. F., 2010). En particular, los observadores tienden a ver las
-figuras ambiguas como si estuvieran posicionadas debajo de su punto de vista y esto,
-combinado de forma sutil con una sombra visible puede llevar a que la percepción en
-dirección de las agujas del reloj sea dominante.
-
-A pesar de estos sesgos y la resistencia inicial al cambio intencional, la bailarina es
-biestable y los observadores perciben el cambio. Aunque la
-mayoría de los cambios parecen ser puramente estocásticos, el cambio puede ser influenciado
-por factores de procesamiento de “abajo hacia arriba” (ej, se producen más cambios cuando
-la animación gira más rápido) y de procesamiento de “arriba hacia abajo” (ej,
-intencionalmente enfocándose en los pies de la bailarina. Liu et al., 2012).
+Una de las tareas que genera mayor demanda de tiempo y recursos es la observación de las combinaciones entre los nodos
+y las diferentes frecuencias electromagnéticas. Una forma de solventar este problema es la facilitación de la 
+exploración entre nodos \parencite{Massimini2228}: para este fin, hemos desarrollado una herramienta interactiva 
+de visualización de redes que permite relacionar medidas estadísticas binarias y ponderadas con frecuencias y 
+tiempos para generar espectrogramas y diagramas de coherencia.
 
 \section{Métodos}
 \subsection{Participantes}
-Para la recolección de los datos necesarios, el experimento fue realizado (previa
-autorización) en un grupo de 20 individuos (edad promedio = 19 años), de los cuales se
-pudieron obtener 19 muestras exitosas (un individuo reportó notar la señal y por lo tanto su
-información no fue tenida en cuenta).
 
 \subsection{Materiales}
-El estímulo utilizado es la versión original de la ilusión de la bailarina que se puede
-obtener desde la página web del autor. Esta animación (\ang{8,85} X \ang{10,00}) representa a una
-figura femenina como una silueta negra sobre un fondo de grises degradados (con una sombra
-visible debajo de uno de sus pies, vista desde una elevación de \ang{6,8} desde el plano horizontal,
-con una extensión vertical máxima de \ang{7,15}, rotando \ang{176,47} por segundo en el plano frontal,
-por lo tanto una rotación completa de \ang{360} sucede aproximadamente cada 2 segundos (2,040
-ms, cada uno de los 34 frames de la imagen es presentado por 60 ms). Debido a la ausencia
-de señales de profundidad, la bailarina puede ser percibida como si estuviera rotando a favor
-o en contra de la dirección de las agujas del reloj.
-
 \subsection{Diseño}
-Esta animación fue presentada utilizando una aplicación móvil para el sistema operativo
-Android, programada utilizando como base el framework Ionic y tomando en cuenta el
-trabajo realizado en las librerías PsychoJS. Puede encontrar más información al respecto y
-enlaces a los repositorios en el Anexo 2.
-
-Unos contornos explícitos fueron añadidos en ciertos lugares y momentos de la
-animación de modo que estos desambiguaran la orientación en la profundidad y rotación de la
-figura usando señales de auto-oclusión. Los ejemplos de dichos contornos son apreciados en
-la figura 1, donde la adición de un simple contorno de color blanco interno a la silueta
-desambigua cuál de las piernas de la bailarina está extendida y por lo tanto determina la
-dirección a la que ella está apuntando.
-
 \subsection{Procedimiento}
-A cada observador se le suministró un dispositivo
-móvil con la aplicación “Spinning Dancer” instalada y a través de dicha aplicación, se expuso
-al observador ante un total de 300 repeticiones del estímulo a lo largo de 5 minutos. Durante
-este periodo de tiempo fueron presentadas al observador un total de 5 señales transitorias (a
-los 26, 76, 148, 200, 258 segundos) que alteraban de forma directa la profundidad de la
-imagen con el objetivo de generar un cambio perceptual.
-
-Se le pidió al observador que registrara cualquier tipo de cambio perceptual en la
-dirección de la animación, utilizando dos botones ubicados dentro del área táctil del
-dispositivo móvil en la parte inferior. Una vez transcurridos los 5 minutos de la prueba se
-consultó a cada uno de ellos si habían notado algún tipo de alteración o aparición de alguna
-señal durante la animación. Si la aparición de las 5 señales había pasado totalmente
-desapercibida para el observador, entonces se procedía a enviar los resultados de su prueba a
-un servidor que habíamos dispuesto con anterioridad para recibir y almacenar la información
-para su posterior análisis.
-
 \section{Resultados}
-
-Los observadores experimentaron un promedio de 26 cambios perceptuales a lo largo del
-experimento (SD = 22,49), con un promedio de latencia entre cambios perceptuales de 24,22
-s (SD = 16,62).
-
-Si una señal transitoria es la causante de un cambio perceptual, podríamos naturalmente
-esperar encontrar cambios registrados muy cercanos a los tiempos de aparición de dichas
-señales, es decir, que la señal produzca un cambio perceptual poco después de su aparición.
-Para probar esto, primero calculamos el número de cambios perceptuales ocurridos durante
-los 8 segundos siguientes a la aparición de cada señal, moviendo la ventana de 8 segundos
-por una fracción de 1 segundo cada vez. Sin embargo, para determinar si el cambio
-perceptual fue producido por la señal inconsciente, tuvimos que comparar la frecuencia y
-probabilidad de cambios perceptuales cuando una señal fue presentada en contraste a los
-periodos donde ninguna señal fue presentada. Por lo tanto también medimos la cantidad de
-cambios perceptuales que ocurrieron durante cada fragmento de 8 segundos donde no se
-había presentado una señal. Utilizamos una estrategia tecnológica para medir dicho
-fragmento de 8 segundos moviéndonos 1 segundo desde el inicio hasta el final del
-experimento. Cada fragmento de 8 segundos fue incluido a menos que contuviera en él la
-aparición de una señal (en cuyo caso fue contabilizado como mencionamos anteriormente).
-Por lo tanto esta estrategia nos proporcionó una base en la que se incluyeron todos los
-cambios perceptuales, tanto los estocásticos como los influenciados por las señales.
-
-La información obtenida puede ser apreciada en la figura 2, presentada como la
-proporción de cambios perceptuales en relación a la base de cambios (ej, un valor de 2 indica
-que ocurrieron el doble de cambios perceptuales en relación con la media de cambios de
-base).
-
-Existe una clara tendencia decreciente en esta figura, en la que la mayor parte de los
-cambios perceptuales causados por las señales ocurriendo en los primeros segundos luego de
-la presentación de dicha señal. Inesperadamente, parece ser que este incremento en los
-cambios perceptuales debidos principalmente a la presencia de la señal fue balanceado por un
-decrecimiento correspondiente en los cambios perceptuales ocurridos durante la segunda
-mitad del fragmento (tanto que incluso descendió por debajo de la media de base). En el
-segundo 3 la cantidad de cambios perceptuales no fue tan considerablemente alta en relación
-con la base, pero para la mayoría de segundos restantes fue mucho menor que la media de
-base, excepto por el segundo 5 donde la diferencia no fue tan notable.
-
-Estos análisis se pueden reducir en términos de la tendencia observada directamente en la
-figura 2: Las señales transitorias inconscientes producen un número mayor de cambios
-perceptuales (respecto a la base) inmediatamente después de ser presentadas, llegando a
-producir incluso el doble en el segundo siguiente a dicha presentación.
-
 \section{Discusión}
-La neurociencia es un campo de investigación con un avance vertiginoso y que exige al máximo eficiencia, 
-celeridad y automatización para los procesos implicados en la recolección y análisis de datos. 
-Si bien hasta el momento ha sabido aprovechar la tecnología existente, es menester que los últimos 
-avances matemáticos y en materia tecnológica se conviertan en el brazo fuerte que impulse investigaciones 
-como la conectividad funcional del cerebro.
-
-Tecnologías como la inteligencia artificial, machine learning, deep learning y algoritmos de redes 
-neuronales proveen herramientas potentes como nunca antes habíamos visto y que permitirían no sólo 
-acelerar aún más las investigaciones, sino también, garantizar que los resultados sean muchísimo más 
-confiables, replicables y certeros.
-
-La conectividad funcional del cerebro durante la producción de procesos cognitivos y funciones 
-mentales superiores es un campo de estudio que sólo se puede abordar en humanos. Esto trae como 
-consecuencia ciertas limitaciones a la hora de realizar la investigación, como la falta de pacientes 
-dispuestos a participar en procedimientos clínicos estresantes; por lo tanto, la cantidad y calidad 
-de los datos se ve comprometida. En este contexto, es esencial optimizar las técnicas estadísticas 
-aplicadas para maximizar el potencial de los resultados.
-
-La metodología implementada en la simulación presentada durante este documento fue diseñada específicamente 
-para este tipo de situaciones. Además, el hecho de que los resultados obtenidos podrían haber sido mejorados 
-es razón suficiente para estimar que con un paradigma experimental más estructurado y con más datos, 
-los resultados obtenidos de los pacientes analizados podrían replicarse a más sujetos.
-
 \printbibliography
 
 \end{document}
