@@ -1,13 +1,12 @@
-\documentclass[12pt, man, donotrepeattitle, letterpaper]{apa6}
+\documentclass[12pt, donotrepeattitle, jou]{apa6}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 \title{Identificando el riesgo de suicidio a través de una red neuronal capsular usando datos de Facebook}
 \shorttitle{Suicidio, inteligencia artificial y Facebook}
-\author{Juan D. Angarita \\ Sharol G. Torres}
+\author{Juan D. Angarita - Sharol G. Torres}
 \affiliation{Universidad Popular del Cesar}
-\note{\today}
 \addbibresource{bibliography.bib}
 \abstract{Una de las principales causas de muerte que ha tenido un aumento dramático en los últimos años en Colombia es el suicidio. Esta situación tiene un componente inherente que lo hace difícil de prevenir: es muy complejo identificar a las personas en riesgo. En el presente estudio mostraremos cómo (usando un enfoque tecnológico) es posible identificar con un porcentaje de acierto elevado a las personas en riesgo. Utilizando la información pública de Facebook de personas que se han suicidado, hemos entrenado una red neuronal capsular para que pueda llevar a cabo dicha labor. Elementos tales cómo: cambios en la preferencia de colores, horas de publicación recurrente y contenido textual de sus perfiles, han pobrado estar relacionados con la problemática. }
 
@@ -15,8 +14,6 @@
 
 \begin{document}
     \maketitle
-    \tableofcontents
-    \newpage
     \section{Introducción}
     A día de hoy, identificar de forma masiva los factores, señales y patrones que dan origen al pensamiento suicida o la
     consumación del mismo sigue siendo una tarea que parece superar todos nuestros esfuerzos. Evidentemente, la conducta suicida representa un desafío complejo para las ciencias humanas, en el que las causas que desencadenan la crisis se interrelacionan de tal forma, que detectarlas puede ser un proceso muy largo. Como flagelo social, este ha sido foco investigativo en diversas disciplinas, cada una encarando el problema de una forma distinta y, sin embargo, los resultados siguen siendo poco aplicables. 
@@ -26,9 +23,7 @@
     Considerando que la población más afectada por esta problemática es también la de mayor acceso a redes sociales \parencite{Facebook}, y dado el aumento de la tendencia a publicar contenido sobre su estado de ánimo en perfiles públicos de Internet, podemos anticipar que explorar estos espacios en busca de elementos comunes entre ellos, puede conducir a la identificación de patrones ignorados hasta ahora, lo que a su vez aumentaría la detección temprana de riesgo potencial e ideación e intento suicida.
     
     Elementos tales cómo: cambios en la preferencia de colores\parencite{Carruthers2010}, aumento de actividad nocturna \parencite{Season} y un discurso marcado por algunas palabras clave \parencite{TextAnalysis}, han probado estar relacionados con la depresión y aparición de ideas suicidas y las redes sociales son sitios propicios para rastrear dichos elementos.
-    \newpage
-    
-    \section{Justificación}
+
     Uno de los elementos limitantes en la lucha contra el suicidio es la falta de detección temprana, es por ello que este estudio se basará en el perfilamiento de las señales y todas las variables que inciden en la consumación del suicidio y sus manifestaciones previas.
     
     Se sostiene que la funcionalidad de las alertas primarias debe tomarse como señales que conducirán a la necesaria detección temprana, lo que implica necesariamente el reconocimiento del suicidio como proceso en el que existen diversos factores intervinientes, que finalmente llevan al sujeto a la decisón de consumar el acto. Por lo que se considera fundamental tener conocimiento sobre el proceso y los eventos que ocurren anteriormmente a que la persona llegue a esta decisión fatal. Dichos eventos son la ideación suicida y el intento de suicidio \parencite{SANCHEZ2010}.
@@ -36,21 +31,7 @@
     Lamentablemente, la detección temprana sigue siendo una deuda pendiente de la investigación con la sociedad. Sin embargo, tomando como base el más reciente avance de la inteligencia artificial y usando como catalizador un algoritmo de redes neuronales capsulares, analizaremos la producción textual, visual, los patrones de actividad, las preferencias en los cambios de colores y otras variables recolectadas en perfiles públicos de suicidas en facebook; con el objetivo de poder entrenar eficientemente un modelo que nos permita usando la misma información proveniente de perfiles comunes, identificar aquellas personas que están dando señales de estar ante un riesgo inminente.
     
     Confiamos en que de la integración de algoritmos de inteligencia artificial y conocimientos psicológicos, vendrá la próxima revolución de nuestro campo. Existen numerosas variables cuantitativas que podrían darnos muestras claras de patrones que a día de hoy siguen velados para la investigación tradicional, puesto que, nuestra capacidad de detección de patrones y procesamiento numérico palidece ante la sofisticación actual de las máquinas.
-    \newpage
-    
-    \section{Objetivos}
-    \subsection{General}
-    Diseñar un algoritmo de inteligencia artificial que reconozca patrones relacionados con la ideación suicida, usando como base información pública proveniente de redes sociales.
-    
-    \subsection{Específicos}
-    \begin{itemize}
-        \item Identificar las señales de alerta (directas o indirectas) provistas por el sujeto a través del flujo de información compartida en sus redes sociales.
-        \item Establecer la correlación que subyace entre los factores que inciden de manera directa en la consumación del suicidio y las distintas señales identificadas.
-        \item Planificar estrategias de entrenamiento para que un algoritmo pueda reconocer los posibles patrones de manifestación de una crisis suicida o de riesgo potencial.
-    \end{itemize}
-    \newpage
-    \section{Marco Teórico}
-    
+
     \subsection{Paradigma de redes neuronales actual}
     En los últimos años, las investigaciones en el campo de inteligencia artificial (en lo que se refiere al aprendizaje profundo) se centraron en cómo aumentar la profundidad de una red, agregando más capas para lograr un mayor grado de abstracción (comenzando desde las primeras capas convolucionales capaces de extraer formas pequeñas, ángulos o intensidad de color, vamos paso a paso combinando características simples en diseños cada vez más complejos)\parencite{Capsules}.
     
@@ -83,8 +64,7 @@
         \item Reemplazar el max-pooling con dynamic routing.
         \item Arquitectura no profunda.
     \end{itemize}
-    
-    \newpage
+
     \section{Métodos}
     \subsection{Participantes}
     Para hacer la identificación de los patrones relacionados con la conducta suicida, utilizamos 20 perfiles de Facebook con contenidos públicos de personas que cometieron, intentaron cometer o han estado en situación de riesgo frente al suicidio. El promedio de edad de los sujetos referenciados en los perfiles es de 21 años ($\sigma = 4.5$), 11 hombres y 9 mujeres.
@@ -112,7 +92,7 @@
     \end{itemize}
 
     Cuando todas las imágenes se procesaron, se prosiguió a tomar el texto escrito en cada imagen, publicación y elemento compartido para evaluarlo a través de un analizador de sentimientos. El enfoque utilizado fue dividir los textos en frases y examinar una por una en los servicios cognitivos de Microsoft. Una vez obtenido el puntaje de cada frase (entre 0 y 1), se examinó el texto completo y se compararon los resultados para evitar que la presencia de algunas frases positivas alteraran el puntaje de una publicación mayoritariamente negativa.
-    \newpage
+
     \section{Resultados}
     De entre los perfiles que fueron sometidos al análisis, se encontraron que 5 de ellos no contenían la cantidad mínima de publicaciones en el último mes antes de la fecha de suicidio, por lo tanto, fueron descartados para evitar que dicha limitación afectara los resultados finales. Esta es una dificultad que responde a dos causas principales: la primera de ellas es la política de privacidad de datos de Facebook, que será discutida más adelante y la segunda es la tendencia que tienen algunas personas a alejarse del ojo público semanas antes de cometer el acto \parencite{SuicidalB}.
     
@@ -187,8 +167,8 @@
     \end{center}
     
     La figura 9 nos muestra la aparición repentina de actividad nocturna en el sujeto 14, cuya actividad nocturna previa era prácticamente nula. Personas con un patrón de actividad nocturna alto (figura 10), también vieron incrementado el nivel de dicha actividad, los días antes del suicidio.
-    \newpage
-    \section{Conclusiones}
+
+    \section{Discusión}
     Como hemos podido observar, a pesar de la diversidad demográfica de los perfiles de los sujetos utilizados durante esta investigación, existen algunos patrones generalizados que son identificables de forma masiva \parencite{Twitter}, y que nos permitirían ante una eventual creación de un instrumento más robusto poder reaccionar a tiempo ante un riesgo potencial de suicidio.
     
     Al analizar el flujo de información provista por los mismos sujetos en sus redes sociales, se encontraron elementos que ven aumentada su frecuencia de aparición temporalmente durante momentos de crisis, episodios depresivos y demás situaciones relacionadas al suicidio. Lamentablemente, debido a las configuraciones de privacidad establecidas en la mayor parte de los perfiles de Facebook, el entrenamiento que hemos podido hacer sigue teniendo sus limitaciones. Tal vez, redes sociales con otras tendencias de privacidad como Twitter puedan arrojar datos que permitan potenciar el entrenamiento de nuestro algoritmo.
